@@ -449,4 +449,12 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
     return '<h2>' . $content . '</h2>';
 }
 
-?>
+// my code
+
+add_action("wp_enqueue_scripts", "my_scripts_enqueue", false);
+function my_scripts_enqueue() {
+
+        wp_enqueue_script('bootstrap_js', get_template_directory_uri(). '/js/bootstrap.min.js');
+        wp_enqueue_style('bootstrap_css', get_template_directory_uri(). '/css/bootstrap.min.css');
+}
+require get_template_directory() . '/inc/walkers/bootstrap_menu.php';

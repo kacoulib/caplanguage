@@ -30,21 +30,31 @@
 
 			<!-- header -->
 			<header class="header clear" role="banner">
+	
+				<div class="container-fluid">
+			 		<nav class="navbar navbar-default">
+		      				  <div class="container-fluid">
+				          		<div class="navbar-header">
+				            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+		              <span class="icon-bar"></span>
+		              <span class="icon-bar"></span>
+		              <span class="icon-bar"></span>
+		            </button>
+		            <a class="navbar-brand" href="<?php echo home_url(); ?>">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="logo-img">
+		            </a>
+		          </div>
 
-					<!-- logo -->
-					<div class="logo">
-						<a href="<?php echo home_url(); ?>">
-							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="logo-img">
-						</a>
-					</div>
-					<!-- /logo -->
-
-					<!-- nav -->
-					<nav class="nav" role="navigation">
-						<?php html5blank_nav(); ?>
-					</nav>
+		          <div id="navbar" class="navbar-collapse collapse">
+						<?php wp_nav_menu(array(
+							'menu'=>'',
+							'menu_class'=>'nav navbar-nav navbar-right',
+							'walker'=> new wp_bootstrap_navwalker(),
+						)); ?>
+		          </div><!--/.nav-collapse -->
+		        </div><!--/.container-fluid -->
+		      </nav>
 					<!-- /nav -->
-
+</div>
 			</header>
 			<!-- /header -->
