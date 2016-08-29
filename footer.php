@@ -2,11 +2,36 @@
 			<footer class="footer" role="contentinfo">
 
 				<!-- copyright -->
-				<p class="copyright">
-					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by', 'html5blank'); ?>
-					<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>.
-				</p>
+				<div class="socials">
+					<ul>
+						<li>
+							<a href="" target="_blank">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/icons/facebook.png">
+							</a>
+						</li>
+						<li>
+							<a href="" target="_blank">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/icons/youtube.png">
+							</a>
+						</li>
+						<li>
+							<a href="https://fr.linkedin.com/in/marina-hossie-7435a833" target="_blank">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/icons/linkedin.png">
+							</a>
+						</li>
+					</ul>
+				</div>
 				<!-- /copyright -->
+				<p class="copyright logo_name">&copy; <span>cap</span>language <?php echo date('Y'); ?></p>
+				<div class="mentions">
+					<ul>
+						<li><a href="">Mentions légales</a></li><!-- 
+						--><li><a href="">Plan du site</a></li><!-- 
+						--><li><a href="">CGV</a></li><!-- 
+						--><li><a href="">Partenaires</a></li>
+					</ul>
+				</div>
+				
 
 			</footer>
 			<!-- /footer -->
@@ -15,16 +40,6 @@
 		<!-- /wrapper -->
 
 		<?php wp_footer(); ?>
-
-		<!-- analytics -->
-		<script>
-		(function(f,i,r,e,s,h,l){i['GoogleAnalyticsObject']=s;f[s]=f[s]||function(){
-		(f[s].q=f[s].q||[]).push(arguments)},f[s].l=1*new Date();h=i.createElement(r),
-		l=i.getElementsByTagName(r)[0];h.async=1;h.src=e;l.parentNode.insertBefore(h,l)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		ga('create', 'UA-XXXXXXXX-XX', 'yourdomain.com');
-		ga('send', 'pageview');
-		</script>
 
 	</body>
 </html>

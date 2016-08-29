@@ -1,0 +1,144 @@
+.demo-cont{
+	background-color: white;
+	>.fnc-slider{
+		height: 75%;
+	}
+	>#services{
+		padding: 15px 0 10px;
+		height: 25%;
+		text-align: center;
+
+		li{
+			&:nth-child(2){
+				padding: 0 10%;
+			}
+			h2{
+				font-family: 'JosefinSlab_bold';
+				font-size: 2rem;
+			}
+		}
+
+	}
+	.fnc-slider__slides .fnc-slide{
+		/*first carousel*/
+		&:nth-child(1){
+			.fnc-slide__inner{
+				background-image: url('img/home/carousel/slider_img_0.png');
+				background-color: white;
+				.my_slider_text{
+					p{
+						color: #febe07;
+					}
+				}
+			}
+			.fnc-slide__mask-inner{
+				background-image: url('img/home/carousel/slider_img_0.png');
+				background-size: contain;
+				/*@include linear-gradient(60deg, red, blue);*/
+			}
+		}
+		/* juridique slider */
+		/*.fnc-slide__heading-line{*/
+			img{
+				position: absolute;
+				left: -40%;
+				top: -60%;
+				width: 60%;
+
+				transition: -webkit-transform 1.5s 1s;
+	    transition: transform 1.5s 1s;
+	    transition: transform 1.5s 1s, -webkit-transform 1.5s 1s;
+	    -webkit-transition: -webkit-transform 1.5s 1s;
+	    -webkit-transform: translateY(0);
+	    transform: translateY(0);
+	    text-transform: initial;
+	    font-size: 4rem;
+	    font-family: 'helveticaNeueLTStd_bold';
+	    word-spacing: initial;
+			}
+
+		/*}*/
+		/*second carousel*/
+		&:nth-child(2){
+			.fnc-slide__inner{
+				background-image: url('img/home/carousel/slider_img_1_0.png');
+				.my_slider_text{
+					p{
+						color: #febe07;
+					}
+				}
+			}
+			.fnc-slide__mask-inner{
+				@include linear-gradient(45deg, #f98936 0%, #ffc600 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f98936', endColorstr='#ffc600',GradientType=1 );
+			}
+		}
+		/*third carousel*/
+		&:nth-child(3){
+			img{
+				width: 50%;
+			}
+			.fnc-slide__inner{
+				background-image: url('img/home/carousel/slider_img_2_0.jpg');
+				.my_slider_text{
+					p{
+						color: #04a708;
+					}
+				}
+			}
+			.fnc-slide__mask-inner{
+				@include linear-gradient(45deg, #09bf92 0%, #04a708 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#09bf92', endColorstr='#04a708',GradientType=1 );
+			}
+		}
+		/*active slide*/
+		&.m--active-slide{
+			.fnc-slide__heading-line{
+				/* text */
+				.my_slider_text{
+					transition: -webkit-transform 1.5s 1s;
+					transition: transform 1.5s 1s;
+					transition: transform 1.5s 1s, -webkit-transform 1.5s 1s;
+					-webkit-transition: -webkit-transform 1.5s 1s;
+					-webkit-transform: translateY(0);
+					transform: translateY(0);
+					text-transform: initial;
+					font-size: 6rem;
+					font-family: 'helveticaNeueLTStd_bold';
+					word-spacing: initial;
+					p{
+						font-family: 'JosefinSlab_Regular';
+					}
+					span{
+						display: inline-block;
+					}
+					.logo_name{
+						position: relative;
+						top: -3rem;
+					}
+					h3{
+						position: relative;
+						top: -5rem;
+						font-size: 3rem;
+						font-family: 'helveticaNeueLTStd_light';
+						word-spacing: initial;
+						color: black;
+					}
+				}
+			}
+		}
+
+		.fnc-slide__inner{
+			background-size: cover;
+			.fnc-slide__content{
+				top: 35%;
+				left: 30%;
+			}
+
+		}
+		.fnc-slide__mask-inner{
+			background-image: none;
+			@include linear-gradient(60deg, #febe07, #fa952b);
+		}
+	}
+}

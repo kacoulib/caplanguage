@@ -1,1 +1,28 @@
 /* mixins.scss */
+
+/* border-raduis */
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+/* animate */
+
+@mixin transform($value) {
+  -webkit-transform: $value;
+     -moz-transform: $value;
+      -ms-transform: $value;
+          transform: $value;
+}
+
+/* degradé | linear-gradient */
+
+@mixin linear-gradient($deg, $start, $end) {
+	background: $start;
+  background: -webkit-linear-gradient($deg, $start, $end);
+  background: -o-linear-gradient($deg, $start, $end);
+  background: -moz-linear-gradient($deg, $start, $end);
+  background: linear-gradient($deg, $start, $end);
+}

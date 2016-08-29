@@ -456,5 +456,25 @@ function my_scripts_enqueue() {
 
         wp_enqueue_script('bootstrap_js', get_template_directory_uri(). '/js/bootstrap.min.js');
         wp_enqueue_style('bootstrap_css', get_template_directory_uri(). '/css/bootstrap.min.css');
+        if (is_home() || is_front_page()) {
+            wp_enqueue_style('home_slider_css', get_template_directory_uri(). '/css/home_slider.css');
+            wp_enqueue_script('home_slider_js', get_template_directory_uri(). '/js/home_slider.js',[],false, true);
+        }
 }
+// walkers
+// twitter bootstrap in navbar
 require get_template_directory() . '/inc/walkers/bootstrap_menu.php';
+
+// custom post types && metabox
+// twitter bootstrap in navbar
+require get_template_directory() . '/inc/cpt/langues.php';
+require get_template_directory() . '/inc/mbx/langues_prefix.php';
+require get_template_directory() . '/inc/mbx/langues_prix.php';
+
+// custom fields
+require get_template_directory() . '/inc/custom_fields/category_fields.php';
+
+// editor custom fields
+if (intval(get_current_user_id()) == intval(get_user_by('slug', 'marina')->ID)) {
+    require get_template_directory() . '/inc/custom_fields/editor_custom.php';
+}

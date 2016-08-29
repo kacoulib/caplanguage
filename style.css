@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 	Theme Name: Bolo
 	Theme URI: http://bolo-dev.io
@@ -76,14 +77,408 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* mixins.scss */
+/* border-raduis */
+/* animate */
+/* degrad├® | linear-gradient */
 /*_variables.scss */
 /* Body Text Styles */
+/*_font_*/
+/* font */
+@font-face {
+  font-family: helveticaNeueLTStd_medium;
+  src: url("fonts/HelveticaNeueLTStd-Md.otf");
+}
+@font-face {
+  font-family: helveticaNeueLTStd_bold;
+  src: url("fonts/HelveticaNeueLTStd-Bd.otf");
+}
+@font-face {
+  font-family: helveticaNeueLTStd_light;
+  src: url("fonts/HelveticaNeueLTStd-Lt.otf");
+}
+@font-face {
+  font-family: JosefinSlab_regular;
+  src: url("fonts/josefin/JosefinSlab-Regular.ttf");
+}
+@font-face {
+  font-family: JosefinSlab_bold;
+  src: url("fonts/josefin/JosefinSlab-Bold.ttf");
+}
+@font-face {
+  font-family: JosefinSlab_italic;
+  src: url("fonts/josefin/JosefinSlab-Italic.ttf");
+}
 /*_typography.scss*/
-/* line 2, saas/partials/_typography.scss */
+/* line 30, saas/partials/_typography.scss */
 body {
   color: black;
   font-size: 16px;
   font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   line-height: 1.6;
+}
+
+/* line 23, saas/style.scss */
+body.home header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+/* line 31, saas/style.scss */
+body section {
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  perspective: 500px;
+  background: #febe07;
+  background: -webkit-linear-gradient(60deg, #febe07, #fa952b);
+  background: -o-linear-gradient(60deg, #febe07, #fa952b);
+  background: -moz-linear-gradient(60deg, #febe07, #fa952b);
+  background: linear-gradient(60deg, #febe07, #fa952b);
+}
+/* line 32, saas/style.scss */
+body section::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -80%;
+  width: 200%;
+  height: 100%;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+  background-color: white;
+  z-index: 5;
+}
+/* line 52, saas/style.scss */
+body footer {
+  background-color: #e9e9e9;
+  padding: 1rem 0;
+}
+/* line 55, saas/style.scss */
+body footer .socials {
+  margin-bottom: 1rem;
+}
+/* line 57, saas/style.scss */
+body footer .socials li {
+  text-align: center;
+}
+/* line 59, saas/style.scss */
+body footer .socials li:nth-child(2) {
+  margin: 0 1rem;
+}
+/* line 62, saas/style.scss */
+body footer .socials li a {
+  display: block;
+  padding: 10px;
+  width: 48px;
+  height: 48px;
+  border: 1px solid black;
+  border-radius: 100%;
+}
+/* line 74, saas/style.scss */
+body footer .mentions li a {
+  display: block;
+  color: black;
+  font-size: .8rem;
+}
+/* line 78, saas/style.scss */
+body footer .mentions li a::after {
+  content: '|';
+  padding: 0 5px;
+}
+/* line 85, saas/style.scss */
+body footer .mentions li:last-child a::after {
+  content: '|';
+  display: none;
+}
+/* line 94, saas/style.scss */
+body footer .copyright {
+  float: right;
+}
+/* line 96, saas/style.scss */
+body footer .copyright span {
+  font-weight: bold;
+}
+/* line 100, saas/style.scss */
+body footer ul {
+  text-align: center;
+}
+
+/* line 1, saas/partials/_others.scss */
+.super_container {
+  margin: auto;
+  width: calc(100% - 100px);
+}
+
+/* line 5, saas/partials/_others.scss */
+ul li {
+  display: inline-block;
+}
+
+/* line 8, saas/partials/_others.scss */
+.logo_name {
+  color: black;
+  font-family: 'helveticaNeueLTStd_light';
+  text-transform: uppercase;
+}
+/* line 13, saas/partials/_others.scss */
+.logo_name > i {
+  font-family: 'helveticaNeueLTStd_bold';
+  display: inline-block;
+  font-weight: bold;
+}
+
+/* line 19, saas/partials/_others.scss */
+.picto {
+  display: inline-block;
+  width: 110px;
+  height: 110px;
+  background-repeat: no-repeat;
+}
+/* line 25, saas/partials/_others.scss */
+.picto.traduction {
+  background-image: url("img/pictos/services/traduction.png");
+}
+/* line 28, saas/partials/_others.scss */
+.picto.interpretariat {
+  background-image: url("img/pictos/services/interpretariat.png");
+}
+/* line 31, saas/partials/_others.scss */
+.picto.localisation {
+  background-image: url("img/pictos/services/localisation.png");
+}
+
+/*secteurs*/
+/* line 38, saas/partials/_others.scss */
+#secteurs li {
+  padding: 15px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 44, saas/partials/_others.scss */
+#secteurs li:first-child {
+  background-image: url("img/home/secteurs/medical.jpg");
+}
+/* line 47, saas/partials/_others.scss */
+#secteurs li:nth-child(2) {
+  padding: 0;
+  padding-left: 15px;
+}
+/* line 52, saas/partials/_others.scss */
+#secteurs li:nth-child(2) ul li:nth-child(1) {
+  background-image: url("img/home/secteurs/juridique.jpg");
+  background-repeat: no-repeat;
+  margin: 0 15px 15px 0;
+}
+/* line 58, saas/partials/_others.scss */
+#secteurs li:nth-child(2) ul li:nth-child(2) {
+  background-image: url("img/home/secteurs/autres.jpg");
+  width: calc(50% - 7.5px);
+  margin-right: 7.5px;
+  padding: 15px;
+}
+/* line 64, saas/partials/_others.scss */
+#secteurs li:nth-child(2) ul li:nth-child(3) {
+  background-image: url("img/home/secteurs/particuliers.jpg");
+  width: calc(50% - 7.5px);
+  margin-left: 7.5px;
+}
+/* line 71, saas/partials/_others.scss */
+#secteurs li div {
+  border: 2px solid white;
+  			/*.picto{
+  				width: 290px;
+  				height: 290px;
+  				
+  				&.medical{
+  					background-image: url('img/pictos/secteurs/medical.png');
+  				}
+  				&.juridique{
+  					background-image: url('img/pictos/secteurs/juridique.png');
+  				}
+  				&.autres{
+  					background-image: url('img/pictos/secteurs/autres.png');
+  				}
+  				&.particuliers{
+  					background-image: url('img/pictos/secteurs/particuliers.png');
+  				}
+  
+  			}*/
+}
+/* line 73, saas/partials/_others.scss */
+#secteurs li div img {
+  margin: auto;
+}
+/* line 94, saas/partials/_others.scss */
+#secteurs li div h2 {
+  font-family: 'JosefinSlab_italic';
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* line 1, saas/partials/_overwrite.scss */
+.demo-cont {
+  background-color: white;
+}
+/* line 3, saas/partials/_overwrite.scss */
+.demo-cont > .fnc-slider {
+  height: 75%;
+}
+/* line 6, saas/partials/_overwrite.scss */
+.demo-cont > #services {
+  padding: 15px 0 10px;
+  height: 25%;
+  text-align: center;
+}
+/* line 12, saas/partials/_overwrite.scss */
+.demo-cont > #services li:nth-child(2) {
+  padding: 0 10%;
+}
+/* line 15, saas/partials/_overwrite.scss */
+.demo-cont > #services li h2 {
+  font-family: 'JosefinSlab_bold';
+  font-size: 2rem;
+}
+/* line 22, saas/partials/_overwrite.scss */
+.demo-cont .fnc-slider__slides .fnc-slide {
+  /*first carousel*/
+  /* juridique slider */
+  /*.fnc-slide__heading-line{*/
+  /*}*/
+  /*second carousel*/
+  /*third carousel*/
+  /*active slide*/
+}
+/* line 25, saas/partials/_overwrite.scss */
+.demo-cont .fnc-slider__slides .fnc-slide:nth-child(1) .fnc-slide__inner {
+  background-image: url("img/home/carousel/slider_img_0.png");
+  background-color: white;
+}
+/* line 29, saas/partials/_overwrite.scss */
+.demo-cont .fnc-slider__slides .fnc-slide:nth-child(1) .fnc-slide__inner .my_slider_text p {
+  color: #febe07;
+}
+/* line 34, saas/partials/_overwrite.scss */
+.demo-cont .fnc-slider__slides .fnc-slide:nth-child(1) .fnc-slide__mask-inner {
+  background-image: url("img/home/carousel/slider_img_0.png");
+  background-size: contain;
+  /*@include linear-gradient(60deg, red, blue);*/
+}
+/* line 42, saas/partials/_overwrite.scss */
+.demo-cont .fnc-slider__slides .fnc-slide img {
+  position: absolute;
+  left: -40%;
+  top: -60%;
+  width: 60%;
+  transition: -webkit-transform 1.5s 1s;
+  transition: transform 1.5s 1s;
+  transition: transform 1.5s 1s, -webkit-transform 1.5s 1s;
+  -webkit-transition: -webkit-transform 1.5s 1s;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  text-transform: initial;
+  font-size: 4rem;
+  font-family: 'helveticaNeueLTStd_bold';
+  word-spacing: initial;
+}
+/* line 63, saas/partials/_overwrite.scss */
+.demo-cont .fnc-slider__slides .fnc-slide:nth-child(2) .fnc-slide__inner {
+  background-image: url("img/home/carousel/slider_img_1_0.png");
+}
+/* line 66, saas/partials/_overwrite.scss */
+.demo-cont .fnc-slider__slides .fnc-slide:nth-child(2) .fnc-slide__inner .my_slider_text p {
+  color: #febe07;
+}
+/* line 71, saas/partials/_overwrite.scss */
+.demo-cont .fnc-slider__slides .fnc-slide:nth-child(2) .fnc-slide__mask-inner {
+  background: #f98936 0%;
+  background: -webkit-linear-gradient(45deg, #f98936 0%, #ffc600 100%);
+  background: -o-linear-gradient(45deg, #f98936 0%, #ffc600 100%);
+  background: -moz-linear-gradient(45deg, #f98936 0%, #ffc600 100%);
+  background: linear-gradient(45deg, #f98936 0%, #ffc600 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f98936', endColorstr='#ffc600',GradientType=1 );
+}
+/* line 78, saas/partials/_overwrite.scss */
+.demo-cont .fnc-slider__slides .fnc-slide:nth-child(3) img {
+  width: 50%;
+}
+/* line 81, saas/partials/_overwrite.scss */
+.demo-cont .fnc-slider__slides .fnc-slide:nth-child(3) .fnc-slide__inner {
+  background-image: url("img/home/carousel/slider_img_2_0.jpg");
+}
+/* line 84, saas/partials/_overwrite.scss */
+.demo-cont .fnc-slider__slides .fnc-slide:nth-child(3) .fnc-slide__inner .my_slider_text p {
+  color: #04a708;
+}
+/* line 89, saas/partials/_overwrite.scss */
+.demo-cont .fnc-slider__slides .fnc-slide:nth-child(3) .fnc-slide__mask-inner {
+  background: #09bf92 0%;
+  background: -webkit-linear-gradient(45deg, #09bf92 0%, #04a708 100%);
+  background: -o-linear-gradient(45deg, #09bf92 0%, #04a708 100%);
+  background: -moz-linear-gradient(45deg, #09bf92 0%, #04a708 100%);
+  background: linear-gradient(45deg, #09bf92 0%, #04a708 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#09bf92', endColorstr='#04a708',GradientType=1 );
+}
+/* line 96, saas/partials/_overwrite.scss */
+.demo-cont .fnc-slider__slides .fnc-slide.m--active-slide .fnc-slide__heading-line {
+  /* text */
+}
+/* line 98, saas/partials/_overwrite.scss */
+.demo-cont .fnc-slider__slides .fnc-slide.m--active-slide .fnc-slide__heading-line .my_slider_text {
+  transition: -webkit-transform 1.5s 1s;
+  transition: transform 1.5s 1s;
+  transition: transform 1.5s 1s, -webkit-transform 1.5s 1s;
+  -webkit-transition: -webkit-transform 1.5s 1s;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  text-transform: initial;
+  font-size: 6rem;
+  font-family: 'helveticaNeueLTStd_bold';
+  word-spacing: initial;
+}
+/* line 109, saas/partials/_overwrite.scss */
+.demo-cont .fnc-slider__slides .fnc-slide.m--active-slide .fnc-slide__heading-line .my_slider_text p {
+  font-family: 'JosefinSlab_Regular';
+}
+/* line 112, saas/partials/_overwrite.scss */
+.demo-cont .fnc-slider__slides .fnc-slide.m--active-slide .fnc-slide__heading-line .my_slider_text span {
+  display: inline-block;
+}
+/* line 115, saas/partials/_overwrite.scss */
+.demo-cont .fnc-slider__slides .fnc-slide.m--active-slide .fnc-slide__heading-line .my_slider_text .logo_name {
+  position: relative;
+  top: -3rem;
+}
+/* line 119, saas/partials/_overwrite.scss */
+.demo-cont .fnc-slider__slides .fnc-slide.m--active-slide .fnc-slide__heading-line .my_slider_text h3 {
+  position: relative;
+  top: -5rem;
+  font-size: 3rem;
+  font-family: 'helveticaNeueLTStd_light';
+  word-spacing: initial;
+  color: black;
+}
+/* line 131, saas/partials/_overwrite.scss */
+.demo-cont .fnc-slider__slides .fnc-slide .fnc-slide__inner {
+  background-size: cover;
+}
+/* line 133, saas/partials/_overwrite.scss */
+.demo-cont .fnc-slider__slides .fnc-slide .fnc-slide__inner .fnc-slide__content {
+  top: 35%;
+  left: 30%;
+}
+/* line 139, saas/partials/_overwrite.scss */
+.demo-cont .fnc-slider__slides .fnc-slide .fnc-slide__mask-inner {
+  background-image: none;
+  background: #febe07;
+  background: -webkit-linear-gradient(60deg, #febe07, #fa952b);
+  background: -o-linear-gradient(60deg, #febe07, #fa952b);
+  background: -moz-linear-gradient(60deg, #febe07, #fa952b);
+  background: linear-gradient(60deg, #febe07, #fa952b);
 }

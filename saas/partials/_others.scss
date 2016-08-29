@@ -1,0 +1,102 @@
+.super_container{
+	margin: auto;
+	width: calc(100% - 100px)
+}
+ul li{
+	display: inline-block;
+}
+.logo_name{
+	color: black;
+	font-family: 'helveticaNeueLTStd_light';
+	text-transform: uppercase;
+	
+	>i{
+		font-family: 'helveticaNeueLTStd_bold';
+		display: inline-block;
+		font-weight: bold;
+	}
+}
+.picto{
+    display: inline-block;
+    width: 110px;
+    height: 110px;
+    background-repeat: no-repeat;
+
+	&.traduction{
+		background-image: url('img/pictos/services/traduction.png');
+	}
+	&.interpretariat{
+		background-image: url('img/pictos/services/interpretariat.png');
+	}
+	&.localisation{
+		background-image: url('img/pictos/services/localisation.png');
+	}
+}
+
+/*secteurs*/
+#secteurs{
+	li{
+		padding: 15px;
+		text-align: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		&:first-child{
+			background-image: url('img/home/secteurs/medical.jpg');
+		}
+		&:nth-child(2){
+			padding: 0;
+			padding-left: 15px;
+
+			ul li{
+				&:nth-child(1){
+					background-image: url('img/home/secteurs/juridique.jpg');
+					background-repeat: no-repeat;
+					margin: 0 15px 15px 0;
+				}
+					
+				&:nth-child(2){
+					background-image: url('img/home/secteurs/autres.jpg');
+					width: calc(50% - 7.5px);
+					margin-right: 7.5px;
+					padding: 15px;
+				}
+				&:nth-child(3){
+					background-image: url('img/home/secteurs/particuliers.jpg');
+					width: calc(50% - 7.5px);
+					margin-left: 7.5px;
+				}
+			}
+		}
+		div{
+			border: 2px solid white;
+			img{
+				margin: auto;
+			}
+			/*.picto{
+				width: 290px;
+				height: 290px;
+				
+				&.medical{
+					background-image: url('img/pictos/secteurs/medical.png');
+				}
+				&.juridique{
+					background-image: url('img/pictos/secteurs/juridique.png');
+				}
+				&.autres{
+					background-image: url('img/pictos/secteurs/autres.png');
+				}
+				&.particuliers{
+					background-image: url('img/pictos/secteurs/particuliers.png');
+				}
+
+			}*/
+			h2{
+				font-family: 'JosefinSlab_italic';
+				font-size: 3rem;
+				font-weight: bold;
+				color: white;
+			}
+		}
+	}
+}

@@ -14,7 +14,94 @@
 @import "compass";
 @import "compass/reset";
 
-// Here we import our partials
 @import "partials/_mixins.scss";
 @import "partials/_variables.scss";
 @import "partials/_typography.scss";
+
+body{
+	&.home{
+		header{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: 10;
+		}
+	}
+	section{
+		&::after{
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: -80%;
+			width: 200%;
+			height: 100%;
+			@include transform(rotate(-5deg));
+			background-color: white;
+			z-index: 5;
+		}
+
+		height: 500px;
+		position: relative;
+		overflow: hidden;
+		perspective:500px;
+		@include linear-gradient(60deg, #febe07, #fa952b);
+
+	}
+
+	footer{
+		background-color: #e9e9e9;
+		padding: 1rem 0;
+		.socials{
+			margin-bottom: 1rem;
+			li{
+				text-align: center;
+				&:nth-child(2){
+					margin: 0 1rem;
+				}
+				a{
+					display: block;
+					padding: 10px;
+					width: 48px;
+					height: 48px;
+					border: 1px solid black;
+					border-radius: 100%;
+				}
+			}
+		}
+		.mentions{
+			li{
+				a{
+					display: block;
+					color: black;
+					font-size: .8rem;
+					&::after{
+						content: '|';
+						padding: 0 5px;
+					}
+				}
+				&:last-child{
+					a{
+						&::after{
+							content: '|';
+							display: none;
+						}
+					}
+				}
+
+			}
+		}
+		.copyright{
+			float: right;
+			span{
+				font-weight: bold;
+			}
+		}
+		ul{
+			text-align: center;
+		}
+	}
+}
+
+@import "partials/_others.scss";
+@import "partials/_overwrite.scss";

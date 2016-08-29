@@ -1,8 +1,36 @@
+/*_font_*/
+  /* font */
+@font-face {
+  font-family: helveticaNeueLTStd_medium;
+  src: url('fonts/HelveticaNeueLTStd-Md.otf');
+}
+
+@font-face {
+  font-family: helveticaNeueLTStd_bold;
+  src: url('fonts/HelveticaNeueLTStd-Bd.otf');
+}
+@font-face {
+  font-family: helveticaNeueLTStd_light;
+  src: url('fonts/HelveticaNeueLTStd-Lt.otf');
+}
+@font-face {
+  font-family: JosefinSlab_regular;
+  src: url('fonts/josefin/JosefinSlab-Regular.ttf');
+}
+@font-face {
+  font-family: JosefinSlab_bold;
+  src: url('fonts/josefin/JosefinSlab-Bold.ttf');
+}
+@font-face {
+  font-family: JosefinSlab_italic;
+  src: url('fonts/josefin/JosefinSlab-Italic.ttf');
+}
+
 /*_typography.scss*/
 body {
-color: $text-color;
-font-size: $base-font-size;
-font-family: $base-font-family;
-font-weight: $base-font-weight;
-line-height: 1.6;
+	color: $text-color;
+	font-size: $base-font-size;
+	font-family: $base-font-family;
+	font-weight: $base-font-weight;
+	line-height: 1.6;
 }
