@@ -1,10 +1,29 @@
+header{
+	background-color: rgba(0, 0, 0, .13);
+	.nav{
+		li{
+			a{
+				font-size: .8rem;
+				color: black;
+				text-transform: uppercase;
+
+				&:hover, &:focus{
+					background-color: red;
+				}
+			}
+		}
+	}
+}
 .demo-cont{
 	background-color: white;
 	>.fnc-slider{
 		height: 75%;
 	}
+	>.demo-cont__credits{
+		opacity: 0;
+	}
 	>#services{
-		padding: 15px 0 10px;
+		padding: 25px 0 10px;
 		height: 25%;
 		text-align: center;
 
@@ -39,22 +58,22 @@
 		}
 		/* juridique slider */
 		/*.fnc-slide__heading-line{*/
-			img{
+			.fnc-slide__content img{
 				position: absolute;
 				left: -40%;
 				top: -60%;
 				width: 60%;
 
 				transition: -webkit-transform 1.5s 1s;
-	    transition: transform 1.5s 1s;
-	    transition: transform 1.5s 1s, -webkit-transform 1.5s 1s;
-	    -webkit-transition: -webkit-transform 1.5s 1s;
-	    -webkit-transform: translateY(0);
-	    transform: translateY(0);
-	    text-transform: initial;
-	    font-size: 4rem;
-	    font-family: 'helveticaNeueLTStd_bold';
-	    word-spacing: initial;
+				transition: transform 1.5s 1s;
+				transition: transform 1.5s 1s, -webkit-transform 1.5s 1s;
+				-webkit-transition: -webkit-transform 1.5s 1s;
+				-webkit-transform: translateY(0);
+				transform: translateY(0);
+				text-transform: initial;
+				font-size: 4rem;
+				font-family: 'helveticaNeueLTStd_bold';
+				word-spacing: initial;
 			}
 
 		/*}*/
@@ -139,6 +158,72 @@
 		.fnc-slide__mask-inner{
 			background-image: none;
 			@include linear-gradient(60deg, #febe07, #fa952b);
+		}
+	}
+	.fnc-nav__control{
+		display: none;
+	}
+}
+#secteurs_info{
+	display: block;
+	position: relative;
+	margin-top: 50px;
+	background-size: cover;
+
+	#infographie{
+		position: relative;
+		z-index: 2;
+		padding-top: 50px;
+	}
+}
+
+#tarif{
+	background: url('img/home/bg_tarif.png') no-repeat;
+	background-size: cover;
+	text-align: center;
+	font-family: 'helveticaNeueLTStd_medium';
+	padding: 175px 0;
+	
+	div{
+		padding-bottom: 120px;
+		margin-bottom: 25px;
+		h2{
+			font-size: 5rem;
+			color: $color-orange;
+			padding-bottom: 50px;
+		}
+		h3{
+			/*font-weight: bold;*/
+			font-size: 2.5rem;
+			font-family: 'JosefinSlab_bold';
+			color: white;
+		}
+		h4{
+			font-size: 1.5rem;
+			color: white;
+		}
+	}
+	ul{
+		li{
+			a{
+				padding: 1rem;
+				background-color: white;
+				font-size: 2rem;
+				font-family: 'helveticaNeueLTStd_light';
+				color: $color-orange;
+
+				&:hover{
+					color: white;
+					background-color: $color-orange;
+					text-decoration: none;
+				}
+			}
+			&:first-child{
+				margin-right: 1rem;
+			}
+			&:last-child{
+				margin-left: 1rem;
+			}
 		}
 	}
 }

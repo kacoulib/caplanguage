@@ -7,7 +7,9 @@
 	      <!-- slide start -->
 	      <div class="fnc-slide m--blend-green m--active-slide">
 	        <div class="fnc-slide__inner">
+				<img src="<?php echo get_template_directory_uri()?>/img/home/carousel/cadre_0.png" class="slider_box fnc-slide__mask" alt="secteur juridique">
 	          <div class="fnc-slide__mask">
+
 	            <div class="fnc-slide__mask-inner"></div>
 	          </div>
 	          <div class="fnc-slide__content">
@@ -15,7 +17,7 @@
 	            <h2 class="fnc-slide__heading">
 	              <div class="fnc-slide__heading-line">
 	                <div class="my_slider_text">
-	                	<p>Bienvenue chez</p>
+	                	<p><img src="<?php echo get_template_directory_uri();?>/img/home/text_0.png" alt=""></p>
 	                	<div class="logo_name">
 	                		<i>Cap</i>language</div>
 	        	        	<h3>Votre agence de traduction technique</h3>
@@ -69,31 +71,6 @@
 	          </div>
 	        </div>
 	      </div>
-	      <!-- slide end -->
-	      <!-- slide start -->
-	 <!--      <div class="fnc-slide m--blend-red">
-	        <div class="fnc-slide__inner">
-	          <div class="fnc-slide__mask">
-	            <div class="fnc-slide__mask-inner"></div>
-	          </div>
-	          <div class="fnc-slide__content">
-	            <h2 class="fnc-slide__heading">
-	              <div class="fnc-slide__heading-line">
-	                <span>Iron</span>
-	              </div>
-	              <div class="fnc-slide__heading-line">
-	                <span>Man</span>
-	              </div>
-	            </h2>
-	            <button type="button" class="fnc-slide__action-btn">
-	              Credits
-	              <span data-text="Credits">Credits</span>
-	            </button>
-	          </div>
-	        </div>
-	      </div>
-	  -->     <!-- slide end -->
-	      <!-- slide start -->
 
 	    </div>
 	    <nav class="fnc-nav">
@@ -164,72 +141,72 @@
 			</ul>
 		</div>
 	</div>
-	<div id="secteurs">
-		<ul>
-			<li class="col-xs-4">
-				<div>
-					<img src="<?php echo get_template_directory_uri();?>/img/pictos/secteurs/medical.png" alt="">
-					<h2>Médical</h2>
-				</div>
-			</li>
-			<li class="col-xs-8">
-				<ul>
-					<li class="col-xs-12">
-						<div>
-							<img src="<?php echo get_template_directory_uri();?>/img/pictos/secteurs/juridique.png" alt="">
-							<h2>Juridique</h2>
-						</div>
-					</li>
-					<li class="col-xs-6">
-						<div>
-							<img src="<?php echo get_template_directory_uri();?>/img/pictos/secteurs/autres.png" alt="">
-							<h2>Autres secteurs</h2>
-						</div>
-					</li>
-					<li class="col-xs-6">
-						<div>
-							<img src="<?php echo get_template_directory_uri();?>/img/pictos/secteurs/particuliers.png" alt="">
-							<h2>Particuliers</h2>
-						</div>
-					</li>
-				</ul>
-			</li>
+	<div id="secteurs_info">
+		<div id="secteurs">
+			<ul>
+				<li class="col-xs-4">
+					<div>
+						<img src="<?php echo get_template_directory_uri();?>/img/pictos/secteurs/medical.png" alt="">
+						<h2>Médical</h2>
+					</div>
+				</li>
+				<li class="col-xs-8">
+					<ul>
+						<li class="col-xs-12">
+							<div>
+								<img src="<?php echo get_template_directory_uri();?>/img/pictos/secteurs/juridique.png" alt="">
+								<h2>Juridique</h2>
+							</div>
+						</li>
+						<li class="col-xs-6">
+							<div>
+								<img src="<?php echo get_template_directory_uri();?>/img/pictos/secteurs/autres.png" alt="">
+								<h2>Autres secteurs</h2>
+							</div>
+						</li>
+						<li class="col-xs-6">
+							<div>
+								<img src="<?php echo get_template_directory_uri();?>/img/pictos/secteurs/particuliers.png" alt="">
+								<h2>Particuliers</h2>
+							</div>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="clearfix"></div>
+		<div id="infographie">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis sapiente, aperiam eius perferendis minus recusandae ipsum autem deserunt! Nostrum, voluptates reprehenderit dolores totam veniam quaerat sint praesentium perspiciatis perferendis corrupti?
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore saepe deserunt autem, ut optio ipsam quos sint a enim sequi recusandae aliquam itaque, velit consectetur quidem numquam! Doloremque, in, unde.</p>
+		</div>
+		<div class="skew open_skew"></div>
+	</div>
+
+	<!-- tarif -->
+	<div id="tarif">
+		<div>
+			<h2 class="text-uppercase">Testez nous !</h2>
+			<h3>Simulez le prix de votre projet</h3>
+			<h4>simple, précis, rapide et sans engagement</h4>
+		</div>
+		<ul class="text-uppercase">
+			<li><a href="<?php echo get_page_link(60);?>?action=simulator">demander un devis</a></li>
+			<li><a href="<?php echo get_page_link(60);?>?action=devis">simuler un tarif</a></li>
+		</ul>
+
+	</div>
+
+	<!-- carousel -->
+	<div class="carousel">
+		<ul class="slider-nav">
+			<li>your 1</li>
+			<li>your 2</li>
+			<li>your 3</li>
+			<li>your 4</li>
+			<li>your 5</li>
 		</ul>
 	</div>
-	
-	<main role="main">
-		<!-- section -->
-		<section class="block_container"></section>
-		<!-- section -->
-		<!-- section -->
-		<section id="price_simutator">
-		  	<ul>
-		  		<li>Deposer</li>
-		  		<li>Test</li>
-		  	</ul>
-			  <form>
-			  		<input type="file" name="files[]" id='simulator_files' multiple/>
-			  		<label>
-			  			<span>Fr</span>
-				  		<input type="checkbox" name='estimate' value="French" class="simulator_language" data-simulator-price='0.25'>
-			  		</label>
-			  		<label>
-			  			<span>En</span>
-			  			<input type="checkbox" name='estimate' value="English" class="simulator_language" data-simulator-price='0.35'>
-			  		</label>
-			  		<label>
-			  			<span>Ru</span>
-			  			<input type="checkbox" name='estimate' value="Russian" class="simulator_language" data-simulator-price='0.50'>
-			  		</label>
-			  		<textarea id="simulator_textarea"></textarea>
-			  		<input type="submit" value="submit" id="sumulator_submit">
-			  </form>
-			  <div id="simulator_text_lenght"></div>
-			  <div id="simulator_result"></div>
-			  <div id="simulator_total"></div>
-		  </div>
-		</section>
-		<!-- /section -->
-	</main>
+
+
 
 <?php get_footer(); ?>

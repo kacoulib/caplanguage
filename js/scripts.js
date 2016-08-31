@@ -1,7 +1,7 @@
 (function ($, root, undefined) {
 	
 	$(function () {
-		
+		// carousel
 		'use strict';
 			function isHome(){
 				// for local
