@@ -28,6 +28,50 @@ body{
 			z-index: 10;
 		}
 	}
+	header{
+		.header_logo{
+	        @include linear-gradient(60deg, #febe07, #fa952b);
+			a{
+				display: block;
+				padding: 15px 0px;
+				width:100%;
+				text-align: center;
+			}
+		}
+		.header_nav{
+			background-color: rgba(183, 183, 183, 0.72);
+		}
+		.header_num{
+			padding-right: 0;
+			text-align: center;
+			color: white;
+			font-family: 'JosefinSlab_regular';
+			background-color: rgba(183, 183, 183, 0.72);
+			.lang{
+				li{
+					list-style: none;
+				}
+			}
+			.urgence{
+				background-color: rgba(0, 0, 0, 0.72);
+				strong{
+					display: block;
+				}
+				
+			}
+		}
+		#menu-header_menu{
+			float: initial;
+			text-align: center;
+		}
+		.navbar{
+			margin-bottom: 0;
+		}
+		#navbar{
+			display: table!important;
+			margin: auto;
+		}
+	}
 /*	section{
 		&::after{
 			content: '';
@@ -137,6 +181,11 @@ body{
 					content: '3';
 				}
 			}
+			&:nth-child(4){
+				&::before{
+					content: '4';
+				}
+			}
 
 			#code_color{
 				li{
@@ -211,8 +260,12 @@ body{
 			margin-bottom: 1rem;
 			li{
 				text-align: center;
-				&:nth-child(2){
-					margin: 0 1rem;
+				margin: 0 10px;
+				&:first-child{
+					margin-right: 10px;
+				}
+				&:last-child{
+					margin-left: 10px;
 				}
 				a{
 					display: block;
@@ -230,6 +283,7 @@ body{
 					display: block;
 					color: black;
 					font-size: .8rem;
+					opacity: .6;
 					&::after{
 						content: '|';
 						padding: 0 5px;
@@ -247,8 +301,14 @@ body{
 			}
 		}
 		.copyright{
-			float: right;
+			text-transform: initial;
+			i{
+				font-size: .7rem;
+				position: relative;
+				top: -5px;
+			}
 			span{
+				padding-left: 2.5px;
 				font-weight: bold;
 			}
 		}

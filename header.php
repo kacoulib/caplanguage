@@ -40,23 +40,27 @@
 
 					<!-- header -->
 			<header class="header clear" role="banner">
-				<div class="super_container">
+				<div class="">
+					<div class="col-md-2 header_logo">
+			            <a class="navbar-brand logo_name" href="<?php echo home_url(); ?>">
+							<i>Cap</i>Language
+			            </a>
+					</div>
+				<!-- <div class="super_container"> -->
 				
-					<div class="container-fluid col-md-10">
+					<div class="container-fluid col-md-7 header_nav">
 				 		<nav class="navbar">
 			  				<div class="container-fluid">
-				          		<div class="navbar-header">
+<!-- 				          		<div class="navbar-header">
 						            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 										<span class="icon-bar"></span>
 										<span class="icon-bar"></span>
 										<span class="icon-bar"></span>
 						            </button>
-						            <a class="navbar-brand logo_name" href="<?php echo home_url(); ?>">
-										<i>Cap</i>Language
-						            </a>
-								</div>
 
-								<div id="navbar" class="navbar-collapse collapse">
+								</div> -->
+
+								<div id="navbar" class="navbar-collapse collapse text-center">
 									<?php wp_nav_menu(array(
 										'menu'=>'',
 										'menu_class'=>'nav navbar-nav navbar-right',
@@ -67,7 +71,14 @@
 						</nav>
 								<!-- /nav -->
 					</div>
-					<div class="col-md-2">Pour les urgences c'est ici: <strong>N° 06 41 54 37 89</strong> </div>
+					<div class="col-md-3 header_num">
+					<div class="lang col-md-2">
+						<?php pll_the_languages();?>
+					</div>
+					<div class="urgence col-md-10">
+						Pour les urgences c'est ici: <strong>N° 06 41 54 37 89</strong>
+					</div>
+					</div>
 						
 				</div>
 			</header>

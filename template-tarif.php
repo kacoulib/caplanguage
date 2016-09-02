@@ -1,6 +1,6 @@
 <?php /* Template Name: Tarif */ get_header(); ?>
 	<section id="tarif">
-		<h1>Tarif</h1>
+		<h1><img src="<?php echo get_template_directory_uri();?>/img/tarif/text_0.png" alt=""></h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate expedita sunt id accusamus distinctio, autem quaerat enim illo deserunt hic alias iste officia quod nulla in eius inventore impedit vero.</p>
 		<ul>
 			<li><a href="" class="tarif_menu active">Simulater un tarif</a></li>
@@ -58,6 +58,8 @@
 						</ul>
 					</div>
 					<div class="clearfix"></div>
+				</div>
+				<div class="step" id="display_tarif">
 				</div>
 				<div>
 					<ul>
