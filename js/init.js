@@ -74,7 +74,8 @@ $(document).ready(function () {
 		m = date.getMonth()+1,
 		y = date.getFullYear(),
 		data_date = data_lang =  [],
-		form_datas= {date:'', time: '', langue_cible: [], nb_mots: 0};
+		form_datas= {date:'', time: '', langue_cible: [], nb_mots: 0, tarif: 0, prix_par_mot : 0};
+
 
 		////////////////
 		//  select2   //
@@ -118,7 +119,6 @@ $(document).ready(function () {
 		  tags: true,
 		  data: function(){return uploader_data}
 		})
-
 
 
 		////////////////
@@ -239,7 +239,7 @@ $(document).ready(function () {
 			show_next: 3,
 			data : data_date,
 			action: function(){
-				form_datas.date = $('#'+this.id).data('date');
+				form_datas.date = $('#'+this.id).data('date').split("-").reverse().join("-");
 				
 			}
 		});
@@ -250,43 +250,50 @@ $(document).ready(function () {
 		////////////////
 
 		// get form date
-		$('.sub').on('click', function(e){
+		$('#launch_simulation').on('click', function(e){
 			e.preventDefault();
+			let r = '';
 
 			// add time if checked
-			if ($('#choix_heure').is(':checked')){
-				form_datas.time = $('#select_time option:selected').val()
-			}
+			if ($('#choix_heure').is(':checked'))
+				form_datas.time = $('#select_time option:selected').val();
+
 			form_datas.langue_source = $(".langue_source").val();
 			form_datas.langue_cible = $(".langue_cible").val();
 
 			let files = $('#simulator_files').val();
 			
-			var fd = new FormData();
-			var files_data = $('#simulator_files'); // The <input type="file" /> field
+			// if tarif is set
+			if (form_datas.tarif != undefined) {
+				r += '<p class="text-center text-uppercase" id="slogan">';
+				r += (form_datas.tarif * form_datas.prix_par_mot) + ' €';
+				r += '<span>h.t</span><span class="text-lowercase">	environ '+form_datas.prix_par_mot +' € / mot';
+				r += '</p>';
+				r += '<p class="law">Prix estimé non contractuel ; contactez-nous par mail ou tel pour un devis officiel.</p>';
+			}
 
-			// Loop through each data and create an array file[] containing our files data.
-			$.each($(files_data), function(i, obj) {
-				$.each(obj.files,function(j,file){
-					fd.append('files[' + j + ']', file);
-				})
-			});
-
-			// our AJAX identifier
-			fd.append('action', 'convert_to_txt');  
-
-			$.ajax({
-				type: 'POST',
-				url: 'ajaxurl',
-				data: fd,
-				contentType: false,
-				processData: false,
-
-				success: function(response){
-					console.log(response); // Append Server Response
+			// if language cible is set
+			// if language source is set
+			if (form_datas.langue_source != undefined) {
+				r += '<h3></h3>';
+				r += '<div id="text">'+form_datas.langue_source+'<span class="simulator_arrow"></span>';
+				
+				if (form_datas.langue_cible != undefined) {
+					r += '<span>';
+					r += form_datas.langue_cible.join('</span>,<span> ');
+					r += '</span>';
 				}
-			});
+				r += '</div>';
+			}
+			// if date and time are set
+			if (form_datas.date != undefined){
+				r += ' <h4>date de retoure:</h4><p>Le '+ form_datas.date;
+				if (form_datas.time != undefined)
+					r += ' à '+ form_datas.time;
+			}
+			$('#show_result').css('display', 'block').html(r);
 
+			console.log(r)
 			console.log(form_datas)
 		})
 	}
@@ -341,7 +348,7 @@ $(document).ready(function () {
 
 	$(window).on('scroll', function(e){
 		top = $(this).scrollTop();
-		console.log($(this).scrollTop());
+		// console.log($(this).scrollTop());
 		// (function(e){
 		// 	init_svg_anim(e)
 			

@@ -228,7 +228,7 @@ Pour en savoir plus, consultez vos droits sur le site de la CNIL.</p>
 					</div>
 					<div class="col-md-12">
 						<ul class="text-uppercase">
-							<li class="pull-left"><a href="<?php echo get_page_link(60);?>?action=devis">simuler un tarif</a></li>
+							<li class="pull-left"><a href="#" id="launch_simulation">simuler un tarif</a></li>
 							<li class="pull-right"><a href="<?php echo get_page_link(60);?>?action=simulator">demander un devis</a></li>
 						</ul>
 					</div>
