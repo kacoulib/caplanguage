@@ -24,7 +24,7 @@ header{
 		opacity: 0;
 	}
 	>#services{
-		padding: 25px 0 10px;
+		padding: 30px 0 10px;
 		height: 25%;
 		text-align: center;
 
@@ -205,10 +205,13 @@ header{
 				font-family: 'helveticaNeueLTStd_light';
 				color: $color-orange;
 
-				&:hover{
+				&:hover, &:focus, &:active{
 					color: white;
 					background-color: $color-orange;
 					text-decoration: none;
+				}
+				&.not_selected{
+					color: black;
 				}
 			}
 			&:first-child{
@@ -218,5 +221,81 @@ header{
 				margin-left: 1rem;
 			}
 		}
+	}
+	#information{
+
+		&>div{
+			padding-bottom: 2rem;
+			label{
+				cursor: pointer;
+			}
+		}
+		.information_input,
+		.information_input:focus
+		{
+			outline-color: transparent;
+			outline-style: none;
+			border: 0;
+			border-bottom: 1px solid red;
+		}
+	}
+
+	.select2-container--default .select2-selection--single,
+	.select2-container--default .select2-selection--multiple
+	{
+		border-radius: 0;
+	}
+}
+
+/*calendar*/
+.calendar-month-header{
+	background-color: orange!important;
+}
+.calendar-month-header th{
+	padding: 2rem;
+}
+.zabuto_calendar tbody{
+	background-color: #f5f5f5;
+}
+.red{
+	color: #fd0000;
+}
+.orange{
+	color: #fd7100;
+}
+.green{
+	color: #00fd00;
+}
+.bg_red{
+	background-color: #fd0000;
+}
+.bg_orange{
+	background-color: #fd7100;
+}
+.bg_green{
+	background-color: #00fd00;
+}
+div.zabuto_calendar .table tr.calendar-month-header th{
+	color: white;
+	background-color: initial;
+	padding: 4rem 0 3rem;
+	font-size: 1.5rem;
+}
+div.zabuto_calendar .table tr th, div.zabuto_calendar .table tr td{
+	background-color: initial;
+	border: none;
+}
+div.zabuto_calendar .badge-today{
+	background-color: initial;
+	color: #fd0000;
+	position: relative;
+	&::after{
+		content: '*';
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-color: #fd0000;
+		width: 5px;
+		height: 5px;
 	}
 }

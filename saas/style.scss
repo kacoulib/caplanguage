@@ -31,11 +31,12 @@ body{
 	header{
 		.header_logo{
 	        @include linear-gradient(60deg, #febe07, #fa952b);
+			padding: 0 20px;
+
 			a{
 				display: block;
 				padding: 15px 0px;
 				width:100%;
-				text-align: center;
 			}
 		}
 		.header_nav{
@@ -48,12 +49,43 @@ body{
 			font-family: 'JosefinSlab_regular';
 			background-color: rgba(183, 183, 183, 0.72);
 			.lang{
+				padding-right: 0;
 				li{
 					list-style: none;
+					&:first-child{
+						a{
+							position: relative;
+							
+							&::after{
+								content: '';
+								position: absolute;
+								display: block;
+								width: 100%;
+								left: 0;
+								bottom: -5px;
+								border-top: 2px solid black;
+
+							}
+						}
+					}
+					&.current-lang{
+						a{
+							font-weight: bold;
+						}	
+					}
+					a{
+						font-size: .7rem;
+						font-family: 'helveticaNeueLTStd_light';
+						color: black;
+						text-transform: uppercase;
+					}
 				}
 			}
 			.urgence{
 				background-color: rgba(0, 0, 0, 0.72);
+				padding: 0 20px;
+				
+
 				strong{
 					display: block;
 				}
@@ -96,6 +128,7 @@ body{
 	/*page simulator*/
 	#process{
 		position: relative;
+		display: none;
 		margin-top: 9px;
 		padding: 10px;
 		color: black;
@@ -154,10 +187,20 @@ body{
 				z-index: -1;
 				border-radius: 15px;
 			}
+			.ou{
+				display: block;
+				margin: auto;
+				width: 44px;
+				height: 22px;
+				background: url('img/tarif/text_1.png') no-repeat;
+			}
 			h2, h3, h4{
 				color: black;
 				text-align: left;
 				text-transform: uppercase;
+			}
+			h4{
+				font-size: 1.2rem;
 			}
 			>span{
 				font-family: initial;
@@ -182,6 +225,7 @@ body{
 				}
 			}
 			&:nth-child(4){
+				margin-bottom: 0;
 				&::before{
 					content: '4';
 				}
@@ -207,16 +251,10 @@ body{
 						p{
 							color: red;
 						}
-						span{
-							background-color: red;
-						}
 					}
 					&:nth-child(2){
 						p{
 							color: orange;
-						}
-						span{
-							background-color: orange;
 						}
 					}
 					&:nth-child(3){
@@ -224,11 +262,17 @@ body{
 						p{
 							color: green;
 						}
-						span{
-							background-color: green;
-						}
 					}
 				}
+			}
+			#nb_mots{
+				input{
+					width: 100px;
+				}
+				font-family: 'helveticaNeueLTStd_light';
+			}
+			textarea{
+				min-height: 3rem;
 			}
 		}
 
@@ -251,8 +295,124 @@ body{
 			    	}
 			    }
 			}
+			ul{
+				li{
+					a{
+						box-shadow: 6px 8px 29px black;
+						&:hover{
+							box-shadow: initial;
+						}
+					}
+				}
+			}
+		}
+		.devis_display{
+			display: none;
 		}
 	}
+	/* page_contact */
+	#contact_page{
+		h2{
+			font-size: 1.5rem;
+			font-weight: bold;
+			padding: 2rem 0;
+		}
+		.submit_container{
+			text-align: center;
+			input{
+				border-radius: initial;
+				padding: 1rem 2.5rem;
+				box-shadow: 0px 0px 25px rgba(78, 77, 77, 0.79);
+				@include translate-xy(0px, 125%);
+			}
+			
+		}
+		.form_container{
+			z-index: 2;
+
+			label{
+				width: 100%;
+				margin: 7.5px 0;
+			
+				.border_degrade{
+					display: block;
+			
+					&::after{
+						top: 0px;
+						bottom: -1px;
+						left: -3px;
+						right: -3px;
+						border-radius: 0;
+					}
+					span{
+						display: block;
+					}
+
+					border-radius: 0;
+					input, textarea{
+						width: 100%;
+						border: none;
+					}
+					&.textarea{
+						&::after{
+							top: -3px;
+							bottom: -3px;
+							
+						}
+					}
+				}
+			}
+		}
+
+		#contact_simulator{
+			padding: 5rem 0;
+			text-align: center;
+			background: url(img/contact/bg_devis.jpg) no-repeat;
+			background-size: cover;
+			h4{
+				margin: 2.5rem;
+				font-family: 'JosefinSlab_bold';
+				color: black;
+				font-size: 1.8rem;
+			}
+		}
+	}
+	/* end page_contact */
+	/* secteures */
+	#page_secteurs{
+		padding-top: 100px;
+		section{
+			last-child{
+				&.white{
+					padding-bottom: 50px;
+				}
+			}
+			>div{
+				padding: 25px 0;
+				&.white{
+					
+				    @include linear-gradient(45deg, #ffc600 0%,  #f98936 100%);
+				}
+				h2{
+					font-family: 'JosefinSlab_regular';
+					font-size: 4rem;
+				}
+				p{
+					font-family: 'helveticaNeueLTStd_medium';
+				}
+				.btn{
+					margin-top: 50px;
+					box-shadow: 0 0 12px 7px rgba(58, 57, 57, 0.23);
+					&:hover{
+						box-shadow: initial;
+					}
+				}
+				
+			}
+		}
+	}
+	/* end secteures */
+
 	footer{
 		background-color: #e9e9e9;
 		padding: 1rem 0;
@@ -317,6 +477,210 @@ body{
 		}
 	}
 }
+/* apropos*/
+#apropos {
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+	font-family: 'helveticaNeueLTStd_medium';
+	
+	header{
+		padding: 0;
+		background-color: white;
+
+		#img_container{
+			padding: 0;
+			position: relative;
+			img{
+				width: 100%;
+			}
+		}	
+		#text_container{
+			position: absolute;
+			left: 0;
+			top: 0;
+			transform: translateY(calc(50% + 10%));
+		}
+		h1{
+			font-size: 1.3rem;
+		}
+		.logo_name{
+			font-size: 3rem;
+		}
+	}
+
+	h2{
+		font-size: 2rem;
+	}
+	#presentation{
+		position: relative;
+		.marina{
+			z-index: 2;
+			p{
+				text-align: left;
+				margin-bottom: 25px;
+			}
+		}
+
+	}
+	#nos_traducteur{
+		position: relative;
+		@include linear-gradient(45deg, #ffc600 0%, #f98936 100%);
+		.skew{
+			transform: translateY(-100%);
+			position: absolute;
+			z-index: 1;
+			&::after{
+				-ms-transform: skewY(-2.5deg);
+				-webkit-transform: skewY(-2.5deg);
+				transform: skewY(-2.5deg);
+			}
+		}
+		> h2{
+			padding-top: 3rem;
+			font-size: 1.5rem;
+		}
+		.download{
+			position: relative;
+			z-index: 2;
+			
+			a{
+				font-size: 1.2rem;
+				border-radius: 0;
+				box-shadow: 0px 0px 25px rgba(78, 77, 77, 0.79);
+			}
+		}
+	}
+
+	#fond_header{
+	}
+	#video_container{
+		position: relative;
+		video{
+			width: 100%;
+		}
+		&::before{
+			content: '';
+			position: absolute;
+			top: -20px;
+			left: -50px;
+			width: 90%;
+			height: calc(100% + 50px);
+			border: 1px solid red;
+			z-index: -1;
+		}
+		#play_video{
+			position: absolute;
+			width: 190px;
+			height: 190px;
+			top: calc(50% - 90px);
+			left: calc(50% - 90px);
+			cursor: pointer;
+			background-image: url('img/apropos/video_play.png');
+		}
+	}
+	.second_carousel p{
+		min-height: 170px;
+	}
+}
+/*
+#apropos h1{
+  font-size: 1.5rem;
+  font-family: 'helveticaNeueLTStd_bold';
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 115px;
+}
+#apropos h2{
+  font-size: 1.5rem;
+  font-family: 'helveticaNeueLTStd_bold';
+}
+#apropos div {
+  padding-bottom: 120px;
+  margin-bottom: 25px;
+}
+#apropos .logo_name{
+  font-size: 48px;
+  text-align: center;
+}
+#apropos a{
+  position: relative;
+  z-index: 10;
+  padding: 2rem;
+  background-color: white;
+  color: #fe8500;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  font-family: 'helveticaNeueLTStd_light';
+  text-decoration: none;
+  box-shadow: 0px 12px 15px #373737;
+}
+#apropos a:hover{
+  padding: 2rem;
+  background-color: #fe8500;
+  color: white;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  font-family: 'helveticaNeueLTStd_light';
+  text-decoration: none;
+}
+.marina{
+  width: 45rem;
+  text-align: left;
+}
+.image_andrew{
+  background: url("img/apropos/andrew.png") no-repeat;
+  height: 159px;
+}
+.image_herkko{
+  background: url("img/apropos/herkko.png") no-repeat;
+  height: 159px;
+}
+.image_veronique{
+  background: url("img/apropos/veronique.png") no-repeat;
+  height: 159px;
+}
+#apropos ul{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+#apropos ul li{
+  text-align: left;
+  width: 375px;
+  padding: 70px;
+}
+#fond_equipe{
+  position: absolute;
+  background: #ffc600; 
+  background: -webkit-linear-gradient(left, #ffc600 0%, #f98936 99%);
+  background: -o-linear-gradient(left, #ffc600 0%, #f98936 99%);
+  background: linear-gradient(to right, #ffc600 0%, #f98936 99%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc600', endColorstr='#f98936',GradientType=1 );
+  height: 45.75rem;
+  width: 100%;
+}
+.temoins{
+  top: 500px;
+}
+.temoins ul{
+  display: flex;
+}
+.temoins ul li{
+  align-items: flex-end;
+}
+.julien{
+  background: url("img/apropos/julien.png") no-repeat;
+}
+.anastasia{
+  background: url("img/apropos/anastasia.png") no-repeat;
+  width: 327px;
+}
+.laura{
+  background: url("img/apropos/laura.png") no-repeat;
+}
+*/
+
 
 @import "partials/_others.scss";
 @import "partials/_overwrite.scss";

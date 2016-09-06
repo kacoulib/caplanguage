@@ -152,8 +152,11 @@
 			<ul>
 				<li class="col-xs-4">
 					<a href="<?php echo get_permalink() ?>/#traduction">
-						<img src="<?php echo get_template_directory_uri();?>/img/pictos/secteurs/medical.png" alt="">
-						<h2>Médical</h2>
+						<span>
+							<img src="<?php echo get_template_directory_uri();?>/img/pictos/secteurs/medical.png" alt="">
+							<h2>Médical</h2>
+							
+						</span>
 					</a>
 				</li>
 				<li class="col-xs-8">
@@ -277,12 +280,12 @@
 				</clipPath>
 	
 <!-- ANIM 1-->
-					<polyline class='remake_to_path' data-1000="stroke-dashoffset:1000;" data-1400="stroke-dashoffset:0;"
+					<polyline class='remake_to_path' data-_first_start-1500="stroke-dashoffset:0;" data-_first_end-1300="stroke-dashoffset:1000;"
 					 clip-path="url(#SVGID_13_)" fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="0,8" points="
 					645.5,303.17 645.5,372.17 650.875,377.67 951,377.67 	"/>
 
 <!-- PICTO 1 -->
-					<g class="picto_anim" data-0="display:none;" data-1400="display:block;">
+					<g class="picto_anim" data-0="display:none;" data-1500="display:block;">
 							
 						<circle clip-path="url(#SVGID_13_)" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="1016.5" cy="306.689" r="47.396"/>
 					
@@ -349,7 +352,8 @@
 				</clipPath>
 	
 <!-- ANIM 2-->			
-					<polyline class='remake_to_path' clip-path="url(#SVGID_15_)" fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="0,8" points="
+					<polyline class='remake_to_path' data-_second_start-1700="stroke-dashoffset:0;" data-_second_end-1500="stroke-dashoffset:1000;"
+					clip-path="url(#SVGID_15_)" fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="0,8" points="
 					1016.5,449.17 1016.5,485.003 1011.25,490.67 390,490.67 	"/>
 				
 					<circle clip-path="url(#SVGID_15_)" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="295.635" cy="415.319" r="32.35"/>
@@ -389,34 +393,38 @@
 				<clipPath id="SVGID_17_">
 					<use xlink:href="#SVGID_16_"  overflow="visible"/>
 				</clipPath>
-				
-					<polyline clip-path="url(#SVGID_17_)" fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="0,8" points="
+			
+<!-- ANIM 3-->			
+				<polyline class='remake_to_path' data-_third_start-2000="stroke-dashoffset:0;" data-_third_end-1700="stroke-dashoffset:1000;"
+					clip-path="url(#SVGID_17_)" fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="0,8" points="
 					326.5,557.17 326.5,645.003 333.335,652.184 843.5,653.17 	"/>
-				
-					<circle clip-path="url(#SVGID_17_)" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="935.75" cy="643.974" r="47.522"/>
-				
-					<polyline clip-path="url(#SVGID_17_)" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-					970.6,656.891 977.18,656.891 977.18,644.381 968.732,631.626 953.216,631.626 953.216,656.891 955.246,656.891 	"/>
-				
-					<polygon clip-path="url(#SVGID_17_)" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-					956.628,645.192 956.628,634.388 965.157,634.388 973.605,645.192 	"/>
-				
-					<circle clip-path="url(#SVGID_17_)" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="962.558" cy="658.109" r="7.555"/>
-				
-					<circle clip-path="url(#SVGID_17_)" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="926.002" cy="658.109" r="7.555"/>
-				
-					<circle clip-path="url(#SVGID_17_)" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="926.002" cy="658.109" r="4.062"/>
-				
-					<circle clip-path="url(#SVGID_17_)" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="962.558" cy="658.109" r="4.062"/>
-				
-					<polyline clip-path="url(#SVGID_17_)" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-					933.476,656.891 950.616,656.891 950.616,626.752 906.667,626.752 906.667,656.891 918.528,656.891 	"/>
-				
-					<line clip-path="url(#SVGID_17_)" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="893.264" y1="638.531" x2="903.825" y2="638.531"/>
-				
-					<line clip-path="url(#SVGID_17_)" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="898.544" y1="634.388" x2="903.824" y2="634.388"/>
-				
-					<line clip-path="url(#SVGID_17_)" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="903.824" y1="647.954" x2="897" y2="647.954"/>
+					
+					<g class="picto_anim" data-0="display:none;" data-2000="display:block;">
+						<circle clip-path="url(#SVGID_17_)" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="935.75" cy="643.974" r="47.522"/>
+					
+						<polyline clip-path="url(#SVGID_17_)" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+						970.6,656.891 977.18,656.891 977.18,644.381 968.732,631.626 953.216,631.626 953.216,656.891 955.246,656.891 	"/>
+					
+						<polygon clip-path="url(#SVGID_17_)" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+						956.628,645.192 956.628,634.388 965.157,634.388 973.605,645.192 	"/>
+					
+						<circle clip-path="url(#SVGID_17_)" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="962.558" cy="658.109" r="7.555"/>
+					
+						<circle clip-path="url(#SVGID_17_)" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="926.002" cy="658.109" r="7.555"/>
+					
+						<circle clip-path="url(#SVGID_17_)" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="926.002" cy="658.109" r="4.062"/>
+					
+						<circle clip-path="url(#SVGID_17_)" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="962.558" cy="658.109" r="4.062"/>
+					
+						<polyline clip-path="url(#SVGID_17_)" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+						933.476,656.891 950.616,656.891 950.616,626.752 906.667,626.752 906.667,656.891 918.528,656.891 	"/>
+					
+						<line clip-path="url(#SVGID_17_)" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="893.264" y1="638.531" x2="903.825" y2="638.531"/>
+					
+						<line clip-path="url(#SVGID_17_)" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="898.544" y1="634.388" x2="903.824" y2="634.388"/>
+					
+						<line clip-path="url(#SVGID_17_)" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="903.824" y1="647.954" x2="897" y2="647.954"/>
+				</g>
 			</g>
 			<text transform="matrix(1 0 0 1 870.5 721.3906)"><tspan x="0" y="0" font-family="'HelveticaLTStd-Bold'" font-size="24">RÉ</tspan><tspan x="24.72" y="0" font-family="'HelveticaLTStd-Bold'" font-size="24">A</tspan><tspan x="38.472" y="0" font-family="'HelveticaLTStd-Bold'" font-size="24">CTIVITÉ</tspan></text>
 			<g>
@@ -427,51 +435,56 @@
 					<use xlink:href="#SVGID_18_"  overflow="visible"/>
 				</clipPath>
 				
-					<polyline clip-path="url(#SVGID_19_)" fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="0,8" points="
+<!-- ANIM 4-->			
+				<polyline class='remake_to_path' data-_fourth_start-2300="stroke-dashoffset:0;" data-_fourth_end-2000="stroke-dashoffset:1000;"
+					clip-path="url(#SVGID_19_)" fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="0,8" points="
 					905.5,798.17 905.5,837.003 898.167,844.67 411,844.67 	"/>
-				
+					
+				<g class="picto_anim" data-0="display:none;" data-2300="display:block;">
+
 					<circle clip-path="url(#SVGID_19_)" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="220.5" cy="771.898" r="47.613"/>
-				<path clip-path="url(#SVGID_19_)" d="M200.823,742.909c3.488,0,6.316,2.828,6.316,6.316c0,3.487-2.828,6.315-6.316,6.315
+					<path clip-path="url(#SVGID_19_)" d="M200.823,742.909c3.488,0,6.316,2.828,6.316,6.316c0,3.487-2.828,6.315-6.316,6.315
 					c-3.488,0-6.316-2.828-6.316-6.315C194.507,745.737,197.335,742.909,200.823,742.909"/>
-				<path clip-path="url(#SVGID_19_)" d="M211.35,759.023c-0.486-1.539-1.377-2.672-4.454-2.753h-11.822
+					<path clip-path="url(#SVGID_19_)" d="M211.35,759.023c-0.486-1.539-1.377-2.672-4.454-2.753h-11.822
 					c-2.834,0-5.101,1.214-6.073,2.996c0,0-0.972,2.995-0.972,5.425v19.029c0,0.972,0.81,1.701,1.701,1.701c0.89,0,1.7-0.811,1.7-1.701
 					v-12.146c0.324,0.081,0.648,0.162,1.053,0.243c0,0.324-0.081,0.647-0.081,1.053v26.074c0,4.938,2.591,8.907,7.45,9.394V788.66h1.7
 					v19.596c4.778-0.404,7.45-4.453,7.45-9.393V772.87c0-0.323-0.081-3.157-0.081-3.481c0.486-0.081,3.158,3.805,4.453,4.776
 					c1.296,0.972,11.58-5.749,11.58-5.749c0.891-0.242,1.457-1.215,1.133-2.186c-0.323-0.973-1.214-1.458-2.186-1.134
 					c0,0-7.773,3.481-8.583,3.157L211.35,759.023z"/>
-				<polygon clip-path="url(#SVGID_19_)" points="225.196,766.473 224.306,765.582 235.156,754.65 235.48,754.975 	"/>
-				<path clip-path="url(#SVGID_19_)" d="M255.319,791.251h-31.904v-47.694h31.904V791.251z M224.225,790.441h30.285v-46.075h-30.285
+					<polygon clip-path="url(#SVGID_19_)" points="225.196,766.473 224.306,765.582 235.156,754.65 235.48,754.975 	"/>
+					<path clip-path="url(#SVGID_19_)" d="M255.319,791.251h-31.904v-47.694h31.904V791.251z M224.225,790.441h30.285v-46.075h-30.285
 					V790.441z"/>
-				
+
 					<polyline clip-path="url(#SVGID_19_)" fill="none" stroke="#000000" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
 					228.112,750.439 229.083,751.331 232.08,748.092 	"/>
-				
+
 					<rect x="227.547" y="748.739" transform="matrix(1 -0.009 0.009 1 -6.7195 2.0847)" clip-path="url(#SVGID_19_)" fill="none" stroke="#000000" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="3.158" height="3.32"/>
-				
+
 					<line clip-path="url(#SVGID_19_)" fill="none" stroke="#000000" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="235.804" y1="750.277" x2="248.841" y2="750.277"/>
-				
+
 					<polyline clip-path="url(#SVGID_19_)" fill="none" stroke="#000000" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
 					228.112,756.756 229.083,757.729 232.08,754.408 	"/>
-				
+
 					<rect x="227.548" y="755.136" transform="matrix(1 -0.009 0.009 1 -6.7769 2.085)" clip-path="url(#SVGID_19_)" fill="none" stroke="#000000" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="3.158" height="3.32"/>
-				
+
 					<line clip-path="url(#SVGID_19_)" fill="none" stroke="#000000" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="235.804" y1="756.675" x2="248.841" y2="756.675"/>
-				
+
 					<rect x="227.547" y="761.453" transform="matrix(1 -0.009 0.009 1 -6.8335 2.0852)" clip-path="url(#SVGID_19_)" fill="none" stroke="#000000" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="3.158" height="3.319"/>
-				
+
 					<line clip-path="url(#SVGID_19_)" fill="none" stroke="#000000" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="235.804" y1="762.991" x2="248.841" y2="762.991"/>
-				
+
 					<rect x="227.547" y="767.85" transform="matrix(1 -0.0087 0.0087 1 -6.6546 2.0129)" clip-path="url(#SVGID_19_)" fill="none" stroke="#000000" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="3.158" height="3.32"/>
-				
+
 					<line clip-path="url(#SVGID_19_)" fill="none" stroke="#000000" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="235.804" y1="769.388" x2="248.841" y2="769.388"/>
-				
+
 					<rect x="227.548" y="774.247" transform="matrix(1 -0.009 0.009 1 -6.9493 2.0861)" clip-path="url(#SVGID_19_)" fill="none" stroke="#000000" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="3.158" height="3.32"/>
-				
+
 					<line clip-path="url(#SVGID_19_)" fill="none" stroke="#000000" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="235.804" y1="775.785" x2="248.841" y2="775.785"/>
-				
+
 					<rect x="227.547" y="780.563" transform="matrix(1 -0.009 0.009 1 -7.006 2.0864)" clip-path="url(#SVGID_19_)" fill="none" stroke="#000000" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="3.158" height="3.32"/>
-				
+
 					<line clip-path="url(#SVGID_19_)" fill="none" stroke="#000000" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="235.804" y1="782.102" x2="248.841" y2="782.102"/>
+				</g>
 			</g>
 			<text transform="matrix(1 0 0 1 145.5 849.4014)"><tspan x="0" y="0" font-family="'HelveticaLTStd-Bold'" font-size="24">GE</tspan><tspan x="27.312" y="0" font-family="'HelveticaLTStd-Bold'" font-size="24">S</tspan><tspan x="38.688" y="0" font-family="'HelveticaLTStd-Bold'" font-size="24">TION DE P</tspan><tspan x="139.414" y="0" font-family="'HelveticaLTStd-Bold'" font-size="24">R</tspan><tspan x="151.87" y="0" font-family="'HelveticaLTStd-Bold'" font-size="24">OJET</tspan></text>
 			<g>
@@ -482,46 +495,50 @@
 					<use xlink:href="#SVGID_20_"  overflow="visible"/>
 				</clipPath>
 				
-					<polyline clip-path="url(#SVGID_21_)" fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="0,8" points="
+<!-- ANIM 5-->			
+				<polyline class='remake_to_path' data-_fifth_start-2600="stroke-dashoffset:0;" data-_fifth_end-2300="stroke-dashoffset:1000;"
+					clip-path="url(#SVGID_21_)" fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="0,8" points="
 					220.5,963.17 220.5,1047.67 226.75,1053.162 721,1052.67 	"/>
 				
+				<g class="picto_anim" data-0="display:none;" data-2600="display:block;">
 					<ellipse clip-path="url(#SVGID_21_)" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="821.438" cy="947.754" rx="46.642" ry="47.786"/>
-				
+
 					<path clip-path="url(#SVGID_21_)" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
 					M793.991,978.386l-6.535-10.946c0,0,15.765-10.781,22.627-10.781s16.255,3.512,17.072,3.512s12.171,0.816,11.19,5.555
 					c-0.326,1.389-1.062,3.268-15.928,1.063c0,0,12.171,5.309,17.726,0c0.816-1.063,12.171-6.944,15.602-3.758
 					c3.431,3.186-1.307,4.737-1.307,4.737s-18.869,12.089-20.83,12.579c-1.96,0.491-19.85-4.574-26.956-7.596
 					C805.02,971.933,801.669,974.792,793.991,978.386z"/>
-				
+
 					<path clip-path="url(#SVGID_21_)" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
 					M824.052,946.283l-15.685,2.206c-0.326,0.081-0.57-0.246-0.652-0.572l-0.654-5.064l-2.695-19.604
 					c-0.082-0.408,0.163-0.734,0.49-0.734l15.602-2.288c0.327-0.081,0.572,0.246,0.653,0.571l0.899,6.535l-3.514,12.008l5.556,2.043
 					l0.489,4.003C824.541,945.875,824.379,946.201,824.052,946.283z"/>
-				<path clip-path="url(#SVGID_21_)" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M827.646,942.607
+					<path clip-path="url(#SVGID_21_)" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M827.646,942.607
 					l-8.822-2.858c-0.327-0.082-0.407-0.49-0.327-0.817l1.472-4.819l5.799-18.87c0.082-0.325,0.409-0.57,0.735-0.489l15.03,4.819
 					c0.326,0.081,0.408,0.49,0.326,0.817l-2.532,8.332L827.646,942.607z"/>
-				<path clip-path="url(#SVGID_21_)" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M838.673,955.105
+					<path clip-path="url(#SVGID_21_)" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M838.673,955.105
 					l-12.008-10.537c-0.245-0.246-0.245-0.654,0-0.898l3.269-3.84l12.66-15.029c0.245-0.327,0.653-0.327,0.898-0.164l11.927,10.538
 					c0.245,0.245,0.245,0.652,0,0.897l-6.535,7.76l-9.312,11.11C839.327,955.269,838.918,955.351,838.673,955.105z"/>
-				
+
 					<polygon clip-path="url(#SVGID_21_)" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
 					819.559,933.785 810.736,935.175 809.267,925.616 818.089,924.146 	"/>
-				
+
 					<polyline clip-path="url(#SVGID_21_)" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
 					828.871,925.535 830.586,928.967 837.366,924.637 	"/>
-				
+
 					<polygon clip-path="url(#SVGID_21_)" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
 					834.344,932.315 825.849,929.701 828.544,920.39 837.121,923.003 	"/>
-				
+
 					<polyline clip-path="url(#SVGID_21_)" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
 					841.613,934.684 841.858,938.523 849.701,937.625 	"/>
-				
+
 					<polygon clip-path="url(#SVGID_21_)" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
 					843.819,943.18 837.202,937.054 843.492,929.864 850.19,935.991 	"/>
-				
+
 					<path clip-path="url(#SVGID_21_)" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
 					M853.132,962.131c0.407-0.572,0.816-0.98,0.898-1.145c0.653-0.734-2.533-3.92-6.045-2.45c-3.513,1.552-7.27,6.453-8.741,8.822
 					C843.165,963.928,851.172,962.213,853.132,962.131z"/>
+				</g>
 			</g>
 			<text transform="matrix(1 0 0 1 746.375 1027.6514)"><tspan x="0" y="0" font-family="'HelveticaLTStd-Bold'" font-size="24">À LA </tspan><tspan x="50.879" y="0" font-family="'HelveticaLTStd-Bold'" font-size="24">C</tspan><tspan x="63.863" y="0" font-family="'HelveticaLTStd-Bold'" font-size="24">A</tspan><tspan x="78.551" y="0" font-family="'HelveticaLTStd-Bold'" font-size="24">R</tspan><tspan x="91.007" y="0" font-family="'HelveticaLTStd-Bold'" font-size="24">TE</tspan></text>
 			<g>
@@ -532,26 +549,32 @@
 					<use xlink:href="#SVGID_22_"  overflow="visible"/>
 				</clipPath>
 				
-					<polyline clip-path="url(#SVGID_23_)" fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="0,8" points="
+<!-- ANIM 6-->			
+					<polyline class='remake_to_path' data-_sixth_start-2900="stroke-dashoffset:0;" data-_sixth_end-2600="stroke-dashoffset:1000;"
+					clip-path="url(#SVGID_23_)" fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="0,8" points="
 					859.5,1159.17 859.5,1281.17 853.75,1287.67 706,1287.67 	"/>
-				
-					<circle clip-path="url(#SVGID_23_)" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="433.5" cy="1203.983" r="47.049"/>
-				<path clip-path="url(#SVGID_23_)" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M455.697,1206.557
-					h-6.434c0-0.643-0.08-16.246-0.08-17.05c0-9.41-5.55-14.236-16.407-14.236c-10.858,0-16.407,4.745-16.407,14.236
-					c0,0.724,0.08,16.407,0.08,17.13l-6.595-0.16v-17.051c0-13.189,8.365-20.749,22.922-20.749s22.921,7.56,22.921,20.749
-					C455.777,1189.748,455.777,1206.154,455.697,1206.557z"/>
-				<path clip-path="url(#SVGID_23_)" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M464.866,1206.396
-					c0,3.619,0.08,16.729-1.287,19.946c-4.504,10.777-16.728,18.417-30.159,18.417c-13.512,0-25.817-7.801-30.24-18.739
-					c-1.287-3.137-1.126-16.085-1.126-19.624H464.866z"/>
-				<path clip-path="url(#SVGID_23_)" d="M437.441,1220.712c0-2.172-1.769-4.021-4.021-4.021c-2.172,0-4.022,1.77-4.022,4.021
-					c0,1.528,0.885,2.814,2.091,3.458l-1.045,8.043h6.434l-1.126-8.364C436.798,1223.125,437.441,1221.999,437.441,1220.712"/>
+					
+					<g class="picto_anim" data-0="display:none;" data-2900="display:block;">
+						<circle clip-path="url(#SVGID_23_)" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="433.5" cy="1203.983" r="47.049"/>
+						<path clip-path="url(#SVGID_23_)" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M455.697,1206.557
+						h-6.434c0-0.643-0.08-16.246-0.08-17.05c0-9.41-5.55-14.236-16.407-14.236c-10.858,0-16.407,4.745-16.407,14.236
+						c0,0.724,0.08,16.407,0.08,17.13l-6.595-0.16v-17.051c0-13.189,8.365-20.749,22.922-20.749s22.921,7.56,22.921,20.749
+						C455.777,1189.748,455.777,1206.154,455.697,1206.557z"/>
+						<path clip-path="url(#SVGID_23_)" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M464.866,1206.396
+						c0,3.619,0.08,16.729-1.287,19.946c-4.504,10.777-16.728,18.417-30.159,18.417c-13.512,0-25.817-7.801-30.24-18.739
+						c-1.287-3.137-1.126-16.085-1.126-19.624H464.866z"/>
+						<path clip-path="url(#SVGID_23_)" d="M437.441,1220.712c0-2.172-1.769-4.021-4.021-4.021c-2.172,0-4.022,1.77-4.022,4.021
+						c0,1.528,0.885,2.814,2.091,3.458l-1.045,8.043h6.434l-1.126-8.364C436.798,1223.125,437.441,1221.999,437.441,1220.712"/>
+					</g>
 			</g>
 			<text transform="matrix(1 0 0 1 312.125 1285.4014)" font-family="'HelveticaLTStd-Bold'" font-size="24">SÉCURITÉ ET CONFIDENTIALITÉ</text>
 			<text transform="matrix(1 0 0 1 311.125 1318.4102)" font-family="'JosefinSlab-SemiBold'" font-size="18">Nous nous engageons sur la protection de vos données</text>
 			<text transform="matrix(1 0 0 1 311.125 1340.0098)" font-family="'JosefinSlab-SemiBold'" font-size="18">et la confidentialité de leur traitement.</text>
 			<g>
 				
-					<polyline fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="0,8" points="
+<!-- ANIM 7-->			
+				<polyline class='remake_to_path' data-_seventh_start-3200="stroke-dashoffset:0;" data-_seventh_end-2900="stroke-dashoffset:1000;"
+					fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="0,8" points="
 					433.5,1353.17 433.5,1401.17 440.5,1406.67 636.5,1406.67 643.5,1411.67 643.5,1480.17 	"/>
 			</g>
 			<text transform="matrix(1 0 0 1 517.25 1538.0293)"><tspan x="0" y="0" font-family="'HelveticaLTStd-Bold'" font-size="38" letter-spacing="-1">C</tspan><tspan x="20.558" y="0" font-family="'HelveticaLTStd-Bold'" font-size="38">AP</tspan></text>
@@ -572,14 +595,14 @@
 			<h4>simple, précis, rapide et sans engagement</h4>
 		</div>
 		<ul class="text-uppercase">
-			<li><a href="<?php echo get_page_link(60);?>?action=simulator">demander un devis</a></li>
-			<li><a href="<?php echo get_page_link(60);?>?action=devis">simuler un tarif</a></li>
+			<li><a href="<?php echo get_page_link(60);?>?action=simulator">simuler un tarif</a></li>
+			<li><a href="<?php echo get_page_link(60);?>?action=devis">demander un devis</a></li>
 		</ul>
 
 	</div>
 
 	<!-- carousel -->
-		<div class="container" id="carousel">
+		<div class="container my_carousel" >
     		<div class="col-md-12">
 		        <div>
 		            <div id="myCarousel" class="carousel slide">
@@ -623,7 +646,6 @@
 		                        
 			                    <!-- add more items to display more-->
 			                    <!--/item-->
-
 		                </div>
 		                <!--/carousel-inner--> <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span>‹</span></a>
 

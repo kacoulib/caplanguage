@@ -55,3 +55,11 @@
     -webkit-transform: skewY($deg); /* Safari */
     transform: skewY($deg); /* Standard syntax */
 }
+
+/* translate Y */
+
+@mixin translate-xy($x, $y) {
+  -ms-transform: translate($x, $y); /* IE 9 */
+  -webkit-transform: translate($x, $y); /* Safari */
+  transform: translate($x, $y);
+}

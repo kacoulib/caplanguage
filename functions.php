@@ -453,26 +453,42 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
 
 add_action("wp_enqueue_scripts", "my_scripts_enqueue", false);
 function my_scripts_enqueue() {
-            wp_enqueue_script('skrollr','//cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.22/skrollr.min.js',[],'false', true);
 
-        // bootstrap
-        wp_enqueue_script('bootstrap_js', get_template_directory_uri(). '/js/bootstrap.min.js');
-        wp_enqueue_style('bootstrap_css','http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+    // jquery
+    wp_deregister_script( 'jquery' );
+    wp_register_script('my_jquery', '//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js');
+
+    wp_enqueue_script('skrollr','//cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.22/skrollr.min.js',[],'false', true);
+
+    // bootstrap
+    wp_enqueue_script('bootstrap_js', get_template_directory_uri(). '/js/bootstrap.min.js', ['my_jquery']);
+    wp_enqueue_style('bootstrap_css','http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+    
+    // homepage
+    if (is_home() || is_front_page()) {
+        wp_enqueue_style('home_slider_css', get_template_directory_uri(). '/css/home_slider.css');
+        wp_enqueue_script('home_slider_js', get_template_directory_uri(). '/js/home_slider.js',[],false, true);
+        wp_enqueue_script('slick', get_template_directory_uri(). '/js/slick.min.js', array( 'jquery', 'html5blankscripts' ), null, true);
+        wp_enqueue_script('carousel', get_template_directory_uri(). '/js/lightslider.min.js', array( 'jquery'), null, true);
+    }
+
+    // tarif page
+    if (is_page_template('template-tarif.php')) {
+        // select2
+        wp_enqueue_style('select2_css', get_template_directory_uri(). '/css/select2.min.css');
+        wp_enqueue_script('select2', get_template_directory_uri(). '/js/select2.min.js',['my_jquery'],false, true);
         
-        // homepage
-        if (is_home() || is_front_page()) {
-            wp_enqueue_style('home_slider_css', get_template_directory_uri(). '/css/home_slider.css');
-            wp_enqueue_script('home_slider_js', get_template_directory_uri(). '/js/home_slider.js',[],false, true);
-            wp_enqueue_script('slick', get_template_directory_uri(). '/js/slick.min.js', array( 'jquery', 'html5blankscripts' ), null, true);
-            wp_enqueue_script('carousel', get_template_directory_uri(). '/js/lightslider.min.js', array( 'jquery'), null, true);
-        }
-            
-        if (is_page_template('template-tarif.php')) {
-            wp_enqueue_script('select2', get_template_directory_uri(). '/js/select2.min.js',['jquery'],false, true);
-        }
-        
-        // init js
-        wp_enqueue_script('js_init', get_template_directory_uri(). '/js/init.js', array('jquery'), '1.0.0', true);
+        // calendar
+        wp_enqueue_style('calendar_css', get_template_directory_uri(). '/css/zabuto_calendar.min.css');
+        wp_enqueue_script('calendar_js', get_template_directory_uri(). '/js/zabuto_calendar.js',['my_jquery'],false, true);
+    }
+        // ajax
+        // pass Ajax Url to script.js
+
+    // init js
+    wp_enqueue_script('js_init', get_template_directory_uri(). '/js/init.js', array('my_jquery'), '1.0.0', true);
+
+wp_localize_script('js_init', 'ajaxurl', admin_url( 'admin-ajax.php' ) );
 }
 // walkers
 // twitter bootstrap in navbar
@@ -486,6 +502,9 @@ require get_template_directory() . '/inc/mbx/langues_prix.php';
 
 // custom fields
 require get_template_directory() . '/inc/custom_fields/category_fields.php';
+
+// custom ajax
+require get_template_directory() . '/inc/others/read_pdf_doc.php';
 
 // editor custom fields
 if (intval(get_current_user_id()) == intval(get_user_by('slug', 'marina')->ID)) {

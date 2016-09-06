@@ -21,6 +21,7 @@
             tests: {}
         });
         </script>
+        
 
 	</head>
 	<body <?php body_class(); ?>>
@@ -80,6 +81,8 @@
 					</div>
 					</div>
 						
+		<div class="clearfix"></div>
 				</div>
+				
 			</header>
 					<!-- /header -->

@@ -11,8 +11,26 @@ svg{
 		animation: dash 5s linear forwards;
 	}
 }
+.orange{
+	color: orange;
+}
+.red{
+	color: red;
+}
+.green{
+	color: green;
+}
+.white{
+	color: white;
+}
+.law{
+	color: #939292;
+	font-family: 'helveticaNeueLTStd_light';
+	font-size: .6rem;
+
+}
 /*carousel*/
-#carousel{
+.my_carousel, #carousel{
 	padding: 50px;
 	overflow: hidden;
 
@@ -52,8 +70,41 @@ svg{
 	}
 }
 .skew_open{
+	position: relative;
+	width: 100%;
+	min-height: 250px;
+	z-index: 1;
 
+	&::before{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		width: 100%;
+		height: 100%;
+		background-color: white;
+		@include skew-y(-5deg);
+		
+	}
 }
+/* border degrader */
+.border_degrade{
+	position: relative;
+	&::after{
+		position: absolute;
+		top: -4px;
+		bottom: -3px;
+		left: -4px;
+		right: -4px;
+		background: -webkit-linear-gradient(left, #febe07, #fa952b);
+		background: linear-gradient(to right, #febe07, #fa952b);
+		content: '';
+		z-index: -1;
+		border-radius: 15px;
+	}
+}
+/* end border degrader */
 .skew{
 	position: relative;
 	width: 100%;
@@ -80,14 +131,23 @@ svg{
 	}
 
 }
+.block{
+	display: block;
+}
 .btn{
 	padding: 1rem;
     background-color: white;
+    text-transform: uppercase;
     font-size: 2rem;
     font-family: 'helveticaNeueLTStd_light';
     color: #fe8500;
+	
+	&:hover{
+	    color: white;
+	    background-color: #fe8500;
+	}
 }
-.tarif_menu{
+.simulate_menu{
 	position: relative;
 	z-index: 10;
 	&.active{
@@ -162,15 +222,24 @@ svg{
 		padding-top: 50px;
 	}
 	#secteurs{
+		padding: 0 20px;
 		li{
 			padding: 15px;
 			text-align: center;
 			background-repeat: no-repeat;
 			background-size: cover;
 			box-shadow: -10px 1px 18px rgba(0, 0, 0, 0.44);
-
+			a{
+				padding-top: 20px;
+			}
 			&:first-child{
 				background-image: url('img/home/secteurs/medical.jpg');
+				a{
+					height: 100%;
+					span{
+						display: block;
+					}
+				}
 			}
 			&:nth-child(2){
 				padding: 0;
